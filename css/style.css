@@ -1,0 +1,168 @@
+:root {
+    --primary-color: #1d1d1f;
+    --primary-color-hover: #32363d;
+    --secondary-color: #f5f5f7;
+    --blue-color: #0066CC;
+    --light-color: #fff;
+}
+
+body {
+    font-family: PT Sans, sans-serif;
+    background-color: #262626;
+    color: var(--light-color);
+    margin: 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
+ul {
+    list-style: none;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 20px auto;
+    padding: 30px auto;
+    text-align: center;
+}
+
+/* Navigation */
+nav #openup {
+    display: none;
+}
+
+nav {
+    background-color: var(--primary-color);
+    width: 100%;
+    height: 40px;
+    position: fixed;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    color: var(--light-color);
+    width: 100px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: var(--primary-color-hover);
+    color: var(--secondary-color);
+}
+
+/* Showcase */
+#showcase {
+
+    background: linear-gradient(to right, rgb(48, 213, 67), rgb(246, 179, 46)), no-repeat center center/cover;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+#showcase .container {
+    margin-top: 25vh;
+    text-align: center;
+}
+
+#showcase h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#showcase h2,
+#entertaiment h2,
+.music h2 {
+    font-size: 3rem;
+}
+
+#showcase .container {
+    font-size: 1.3rem;
+}
+
+/* Music section */
+.music i {
+    margin-right: 10px;
+}
+
+#music h3 {
+    font-size: 2.5rem;
+}
+
+.btn {
+    background: var(--blue-color);
+    color: var(--secondary-color);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+/* Movie */
+#movie {
+
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+#movie h2 {
+    font-size: 3rem;
+}
+
+#movie a {
+    font-weight: bold;
+    color: var(--blue-color);
+}
+
+#movie a:hover {
+    color: var(--primary-color);
+    border-bottom: var(--primary-color) 2px solid;
+}
+
+
+/* Gift Cards */
+#gift-cards {
+    background-color: var(--light-color);
+    color: var(--primary-color);
+}
+
+/* entertaiment */
+footer {
+    background-color: #262626;
+}
+
+
+.footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer-cols a:hover {
+    border-bottom: var(--secondary-color) 1px solid;
+}
